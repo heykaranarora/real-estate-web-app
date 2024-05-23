@@ -1,0 +1,116 @@
+/* CSS for register page */
+
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../public/assets/re.jpg") center;
+  background-size: cover;
+}
+
+.register_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%; /* Adjusted width for better responsiveness */
+  max-width: 600px; /* Added max-width for better layout on larger screens */
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2); /* Moved box-shadow from .shadow to .register_content */
+}
+
+@media only screen and (min-width: 768px) {
+  .register_content {
+    width: 60%; /* Adjusted width for larger screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .register_content {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+}
+
+.register_content_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.register_content_form input {
+  width: 100%;
+  padding: 10px; /* Adjusted padding for better input appearance */
+  background-color: rgba(255, 255, 255, 0.1); /* Changed background color for better visibility */
+  border: none;
+  border-radius: 5px; /* Reduced border-radius for input fields */
+  outline: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.register_content_form input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.register_content_form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.register_content_form label img {
+  width: 25px;
+}
+
+/* .register_content_form button {
+  margin-top: 15px;
+  width: 100%;  Made the button width 100% for better responsiveness 
+} */
+
+.register_content_form button:hover {
+  box-shadow: none; /* Removed box-shadow on button hover */
+}
+
+.register_content a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register_content a:hover {
+  text-decoration: underline;
+}
+
+.registration-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8d7da; /* Red color for error message */
+  color: #721c24; /* Dark color for text */
+  border: 1px solid #f5c6cb; /* Dark border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+.buttonStyle {
+  padding: 10px 15px;
+  background-color: #F8395A;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 10px;
+}

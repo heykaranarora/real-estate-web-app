@@ -1,0 +1,114 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../public/assets/login.jpg") center;
+  background-size: cover;
+}
+
+.login_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%; /* Changed width to 80% for better responsiveness */
+  max-width: 600px; /* Added max-width for better layout on larger screens */
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2); /* Moved box-shadow from .shadow to .login_content */
+}
+
+.login_content_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.login_content_form input {
+  width: 100%;
+  padding: 10px; /* Adjusted padding for better input appearance */
+  background-color: rgba(218, 214, 214, 0.1); /* Changed background color for better visibility */
+  border: none;
+  border-radius: 5px; /* Reduced border-radius for input fields */
+  outline: none;
+  text-align: center;
+  color: white;
+}
+.login_content_form input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+/* 
+.login_content_form button {
+  margin-top: 15px;
+  width: 100%; /* Made the button width 100% for better responsiveness 
+} */
+
+.login_content_form button:hover {
+  box-shadow: none; /* Removed box-shadow on button hover */
+}
+
+.login_content a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px; /* Adjusted font-size for better alignment */
+  font-weight: 600;
+  text-align: center;
+}
+
+.login_content a:hover {
+  text-decoration: underline;
+}
+
+.login_content p {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+/* Styles for screens larger than 768px */
+@media only screen and (min-width: 768px) {
+  .login_content {
+    width: 60%; /* Adjusted width for larger screens */
+  }
+}
+
+/* Styles for screens smaller than or equal to 767px */
+@media only screen and (max-width: 767px) {
+  .login_content {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+}
+
+/* Adjustments for input fields on smaller screens */
+@media only screen and (max-width: 480px) {
+  .login_content_form input {
+    padding: 8px; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Adjustments for button on smaller screens */
+@media only screen and (max-width: 480px) {
+  .login_content_form button {
+    font-size: 18px; /* Increased font size for smaller screens */
+  }
+}
+
+
+
+.buttonStyle {
+  padding: 10px 12px;
+  background-color: #F8395A;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 10px;
+}
